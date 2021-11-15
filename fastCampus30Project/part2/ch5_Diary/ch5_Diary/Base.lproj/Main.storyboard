@@ -60,7 +60,7 @@
                                         <size key="customSize" width="180" height="200"/>
                                         <connections>
                                             <outlet property="dateLabel" destination="5e4-uA-iHK" id="8sc-mx-PFs"/>
-                                            <outlet property="titleLabel" destination="HcX-r0-Tml" id="0kI-nb-7Xr"/>
+                                            <outlet property="titleLabel" destination="4mQ-ah-HlC" id="5Rw-YI-ObA"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -115,16 +115,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BDb-i5-IFI">
-                                <rect key="frame" x="24" y="236" width="366" height="100"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="e83-l3-GyM"/>
-                                </constraints>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="날짜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIC-Q0-LP1">
                                 <rect key="frame" x="24" y="360" width="366" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
@@ -136,6 +126,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BDb-i5-IFI">
+                                <rect key="frame" x="24" y="232" width="366" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="e83-l3-GyM"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Mzt-08-lH4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
