@@ -15,13 +15,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GH4-gh-N5o">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GH4-gh-N5o">
                                 <rect key="frame" x="10" y="198" width="394" height="60"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <progressView hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="Hw4-Zv-NqN">
+                            <progressView opaque="NO" alpha="0.0" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="Hw4-Zv-NqN">
                                 <rect key="frame" x="48" y="288" width="318" height="4"/>
                             </progressView>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" style="wheels" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hfb-KS-oZc">
@@ -30,12 +30,12 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="7Bs-Qf-xuG">
                                 <rect key="frame" x="24" y="438" width="366" height="31"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sHf-O7-tGu">
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sHf-O7-tGu" userLabel="Cancel Btn">
                                         <rect key="frame" x="0.0" y="0.0" width="143" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="cancle"/>
                                         <connections>
-                                            <action selector="tapCancleBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Szh-lr-BmC"/>
+                                            <action selector="tapCancelBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zK1-hg-E5Q"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oqU-Pn-p14" userLabel="toggle Btn">
@@ -76,8 +76,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="cancleBtn" destination="sHf-O7-tGu" id="Uaq-Vh-sue"/>
+                        <outlet property="cancelBtn" destination="sHf-O7-tGu" id="Lk1-nC-vfQ"/>
                         <outlet property="datePicker" destination="Hfb-KS-oZc" id="bDk-nC-B6k"/>
+                        <outlet property="imageView" destination="HAg-hn-oDi" id="cyc-IE-mgA"/>
                         <outlet property="progressView" destination="Hw4-Zv-NqN" id="BeI-87-zVN"/>
                         <outlet property="timerLabel" destination="GH4-gh-N5o" id="dHm-yo-Zm9"/>
                         <outlet property="toggleBtn" destination="oqU-Pn-p14" id="e2Z-z0-zIB"/>
