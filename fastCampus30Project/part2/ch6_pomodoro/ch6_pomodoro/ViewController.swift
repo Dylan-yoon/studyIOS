@@ -39,12 +39,11 @@ class ViewController: UIViewController {
     func setTimerInfoViewVisble(isHidden: Bool) {
         self.timerLabel.isHidden = isHidden
         self.progressView.isHidden = isHidden
-        
     }
     
     //MARK: DispatchSourceTimer 사용하는방법
     func startTimer() { //이 메서드에서 타이머가 시작되고 멈추는걸 구현
-        if self.timer == nil {
+        if self.timer == nil {              //타이머가 멈춰있을 때
             self.timer = DispatchSource.makeTimerSource(flags: [], queue: .main)
             self.timer?.schedule(deadline: .now(), repeating: 1)
             //deadline:.now()즉시 시작, 3초뒤 하고싶으면 .now() +3

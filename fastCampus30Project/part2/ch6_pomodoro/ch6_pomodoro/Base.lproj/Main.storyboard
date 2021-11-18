@@ -24,9 +24,6 @@
                             <progressView opaque="NO" alpha="0.0" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="Hw4-Zv-NqN">
                                 <rect key="frame" x="48" y="288" width="318" height="4"/>
                             </progressView>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" style="wheels" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hfb-KS-oZc">
-                                <rect key="frame" x="0.0" y="198" width="414" height="216"/>
-                            </datePicker>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="7Bs-Qf-xuG">
                                 <rect key="frame" x="24" y="438" width="366" height="31"/>
                                 <subviews>
@@ -55,6 +52,9 @@
                                     <constraint firstAttribute="width" constant="100" id="diM-L0-tpQ"/>
                                 </constraints>
                             </imageView>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" style="wheels" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hfb-KS-oZc">
+                                <rect key="frame" x="0.0" y="198" width="414" height="216"/>
+                            </datePicker>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
