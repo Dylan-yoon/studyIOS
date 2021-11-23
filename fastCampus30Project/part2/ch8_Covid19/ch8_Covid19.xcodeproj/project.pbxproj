@@ -15,6 +15,7 @@
 		B5874C68274B707600869829 /* ch8_Covid19.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5874C66274B707600869829 /* ch8_Covid19.xcdatamodeld */; };
 		B5874C6A274B707900869829 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5874C69274B707900869829 /* Assets.xcassets */; };
 		B5874C6D274B707900869829 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5874C6B274B707900869829 /* LaunchScreen.storyboard */; };
+		B5D0149B274C1BE9009F64F3 /* CityCovidOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D0149A274C1BE9009F64F3 /* CityCovidOverView.swift */; };
 		D819309C3CE6C6AF481FE693 /* Pods_ch8_Covid19.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ED690842169932694BE3A44 /* Pods_ch8_Covid19.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		B5874C69274B707900869829 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5874C6C274B707900869829 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5874C6E274B707900869829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5D0149A274C1BE9009F64F3 /* CityCovidOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCovidOverView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				B5874C6B274B707900869829 /* LaunchScreen.storyboard */,
 				B5874C6E274B707900869829 /* Info.plist */,
 				B5874C66274B707600869829 /* ch8_Covid19.xcdatamodeld */,
+				B5D0149A274C1BE9009F64F3 /* CityCovidOverView.swift */,
 			);
 			path = ch8_Covid19;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5874C62274B707600869829 /* ViewController.swift in Sources */,
+				B5D0149B274C1BE9009F64F3 /* CityCovidOverView.swift in Sources */,
 				B5874C68274B707600869829 /* ch8_Covid19.xcdatamodeld in Sources */,
 				B5507697274B757B0090C017 /* CovidDetailViewController.swift in Sources */,
 				B5874C5E274B707600869829 /* AppDelegate.swift in Sources */,
