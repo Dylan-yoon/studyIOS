@@ -90,7 +90,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="lUL-61-wcL"/>
                     <connections>
-                        <outlet property="newCaseLabel" destination="uAb-YL-iAN" id="B5A-Jz-N4T"/>
+                        <outlet property="newCaseLabel" destination="CnH-PH-r5j" id="UYf-N2-xkW"/>
                         <outlet property="pieChartView" destination="YrU-b6-pGa" id="nru-2i-RDN"/>
                         <outlet property="totalCaseLabel" destination="Ub3-dM-Do3" id="2UO-vd-oaz"/>
                     </connections>
