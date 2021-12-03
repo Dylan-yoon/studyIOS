@@ -93,7 +93,7 @@
         <!--일기 작성-->
         <scene sceneID="5qz-PP-Z6W">
             <objects>
-                <viewController id="LYh-AA-Jjc" customClass="WriteDiaryViewController" customModule="ch5_Diary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WriteDiaryViewController" id="LYh-AA-Jjc" customClass="WriteDiaryViewController" customModule="ch5_Diary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vZp-qW-vbU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -267,7 +267,7 @@
         <!--Diary Detail View Controller-->
         <scene sceneID="xMk-AZ-gLg">
             <objects>
-                <viewController id="0c3-eW-X5O" customClass="DiaryDetailViewController" customModule="ch5_Diary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DiaryDetailViewController" id="0c3-eW-X5O" customClass="DiaryDetailViewController" customModule="ch5_Diary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nfV-dt-b5I">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -295,16 +295,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Qwt-4M-33t">
-                                <rect key="frame" x="20" y="177.5" width="374" height="150"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="bGg-Vt-E1g"/>
-                                </constraints>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="P8G-0l-7bD">
                                 <rect key="frame" x="24" y="351.5" width="366" height="53"/>
                                 <subviews>
@@ -329,6 +319,9 @@
                                         <rect key="frame" x="0.0" y="0.0" width="48.5" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="수정"/>
+                                        <connections>
+                                            <action selector="tapEditButton:" destination="0c3-eW-X5O" eventType="touchUpInside" id="EV6-J6-HKd"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rb4-V4-ffj">
                                         <rect key="frame" x="98.5" y="0.0" width="48.5" height="31"/>
@@ -336,9 +329,22 @@
                                         <buttonConfiguration key="configuration" style="plain" title="삭제">
                                             <color key="baseForegroundColor" red="1" green="0.50845010859999995" blue="0.44272603620000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="tapDeleteButton:" destination="0c3-eW-X5O" eventType="touchUpInside" id="Xbk-ut-mno"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Qwt-4M-33t">
+                                <rect key="frame" x="20" y="173" width="374" height="150"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="bGg-Vt-E1g"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hXX-xY-kbr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -359,10 +365,15 @@
                             <constraint firstItem="hXX-xY-kbr" firstAttribute="trailing" secondItem="7Nh-MP-0fl" secondAttribute="trailing" constant="24" id="y8s-nW-rtS"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="contentsTextView" destination="Qwt-4M-33t" id="IM1-51-hmE"/>
+                        <outlet property="dateLabel" destination="XJt-ER-noF" id="OXY-fm-35J"/>
+                        <outlet property="titleLabel" destination="ixN-zt-wEI" id="NuK-hP-Wca"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5EV-JS-Qhf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2029" y="285"/>
+            <point key="canvasLocation" x="2029" y="192"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="26L-Ve-wiJ">

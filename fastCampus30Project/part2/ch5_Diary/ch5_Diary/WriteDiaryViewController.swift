@@ -7,6 +7,11 @@
 
 import UIKit
 
+enum DiaryEditorMode {
+    case new
+    case edit(IndexPath, Diary)
+}
+
 
 //델리게이트를 통해서 다이어리 객체 전달
 protocol WriteDiaryViewDelegate: AnyObject {
@@ -29,6 +34,7 @@ class WriteDiaryViewController: UIViewController {
     private let datePicker = UIDatePicker() //UIDatePicker라는 UIKit을 사용하기 위해 상수로 지정해 변경사항없이 사용하기위함
     private var diaryDate: Date? //datePicker에서 선택된 데이터 저장하는 변수라 생각
     weak var delegate : WriteDiaryViewDelegate?
+    var diaryEditorMode: DiaryEditorMode = .new
     
     
     
@@ -37,7 +43,29 @@ class WriteDiaryViewController: UIViewController {
         self.configureContentsTextView()
         self.configureDatePicker()
         self.configureInputField()
+        self.configureEditMode()
         self.confirmButton.isEnabled = false        //isEnabled 메서드는 +버튼인 confirmButton을 활성화 시켜준다는 것인데, 현재 날짜,제목,내용 이 입력되었을 때 활성화 시켜야하므로 초기 false 로 설정한다.
+    }
+    
+    private func configureEditMode() {
+        switch self.diaryEditorMode {
+        case let .edit(_, diary):
+            self.titleTextField.text = diary.title
+            self.contentsTextView.text = diary.contents
+            self.dateTextField.text = self.dateToString(date: diary.date)
+            self.diaryDate = diary.date
+            self.confirmButton.title = "수정"
+            
+        default:
+            break
+        }
+    }
+    
+    private func dateToString(date : Date) -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yy년 MM월 dd일(EEEEE)"
+        formatter.locale = Locale(identifier: "ko_KR")
+        return formatter.string(from: date)
     }
     
     
@@ -57,7 +85,7 @@ class WriteDiaryViewController: UIViewController {
     
     //위에 설정해준 datePicker의 UIDatePickerd의 메서드 들을 정의해준다.
     private func configureDatePicker() {
-        self.datePicker.datePickerMode = .date
+        self.datePicker.datePickerMode = .date //date, time ,countdown timer, dateandtime 이 있다.
         self.datePicker.preferredDatePickerStyle = .wheels //DatePicker의 스타일 3가지가 있고(wheels, compact,  inline) automatic이 있다. 날짜를 선택하는 방식 스타일 구현해주는 메서드
         self.datePicker.addTarget(self, action: #selector(datePickerValueDidChange(_:)), for: .valueChanged)
         //addTaget메서드는 ui컨트롤러 객체가 이벤트에 응답하는 방식을 설정하는 메서드 -->1. 해당뷰컨트롤러기때문에 self , action 은 이벤트 발생했을때 응답하여 호출되는 메서드를 #selector에 넣어준다. For에는 값이 변경될 때마다 호출한다는 의미
@@ -80,10 +108,10 @@ class WriteDiaryViewController: UIViewController {
     @IBAction func tapConfirmButton(_ sender: UIBarButtonItem) {
         guard let title = self.titleTextField.text else { return }
         guard let contents = self.contentsTextView.text else { return }
-        guard let date = self.diaryDate else { return }
-        let diary = Diary(title: title, contents: contents, date: date, isStar: false)
+        guard let date = self.diaryDate else { return }                 //title contents date 의 정보를 tapConfirmButton에 가져온다음
+        let diary = Diary(title: title, contents: contents, date: date, isStar: false)  //diar
         self.delegate?.didSelectRegister(diary: diary)
-        self.navigationController?.popViewController(animated: true)
+        self.navigationController?.popViewController(animated: true) //일기장 화면으로 전환
     } //델리게이트 통해 작성된 다이어리가 전달될 준비가 됬으면 뷰컨트롤러로 가서 받을준비한다.
     
     @objc private func datePickerValueDidChange(_ datePicker: UIDatePicker) {
@@ -119,7 +147,7 @@ class WriteDiaryViewController: UIViewController {
 }
 
 extension WriteDiaryViewController: UITextViewDelegate {
-    func textViewDidChange(_ textView: UITextView) { //텍스트뷰의 텍스트가 입력 될 때 마다 호출되는 메서드 ,,
+    func textViewDidChange(_ textView: UITextView) { //텍스트뷰의 텍스트가 입력 될 때 마다 호출되는 메서드 ,, 입력될때마다 호출됨
         self.validateInputField()
     }
 }
