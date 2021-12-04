@@ -15,6 +15,23 @@
                     <view key="view" contentMode="scaleToFill" id="tWY-2R-Mq1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="d2h-am-TPA">
+                                <rect key="frame" x="0.0" y="117" width="331" height="567"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="UVW-Qu-Pai">
+                                        <rect key="frame" x="0.0" y="44.5" width="331" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UVW-Qu-Pai" id="XU4-bG-4uN">
+                                            <rect key="frame" x="0.0" y="0.0" width="331" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="gF7-h8-a5M"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -23,7 +40,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O5A-72-jDP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1822" y="-892"/>
+            <point key="canvasLocation" x="1821.7391304347827" y="-892.63392857142856"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="6J5-FO-ECe">
@@ -73,7 +90,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oug-3g-vVw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1821.7391304347827" y="1164.5089285714284"/>
+            <point key="canvasLocation" x="1822" y="1187"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="XGQ-yg-1mD">
@@ -114,6 +131,18 @@
                     <view key="view" contentMode="scaleToFill" id="qb1-SS-zcs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Imr-6I-ZkI">
+                                <rect key="frame" x="0.0" y="31" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="Fdw-mm-hNj">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="s3o-rS-0rz"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="a1i-l0-8wS"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="VAA-i2-yWk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -132,10 +161,10 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
+                        <segue destination="1KY-cM-bQC" kind="relationship" relationship="viewControllers" id="fCg-wC-1B7"/>
                         <segue destination="xCi-by-Ayr" kind="relationship" relationship="viewControllers" id="jAv-VB-tz5"/>
                         <segue destination="V9a-Bh-2eA" kind="relationship" relationship="viewControllers" id="9UO-oB-6c6"/>
                         <segue destination="PP1-hG-WYr" kind="relationship" relationship="viewControllers" id="P9o-0k-Rs0"/>
-                        <segue destination="1KY-cM-bQC" kind="relationship" relationship="viewControllers" id="fCg-wC-1B7"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Apj-N0-k4i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
