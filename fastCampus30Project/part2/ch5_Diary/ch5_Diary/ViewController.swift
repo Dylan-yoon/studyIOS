@@ -25,6 +25,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.configureCollectionView()
         self.loadDiaryList()
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(editDiaryNotfication(_:)),
+            name: NSNotification.Name("editDiary"),
+            object: nil
+        )
     }
     
     //다이어리 리스트 배열에 추가된일기를 콜렉션뷰에 표시되도록 구현
@@ -35,6 +41,15 @@ class ViewController: UIViewController {
         self.collectionView.dataSource = self
     }
     
+    @objc func editDiaryNotfication(_ notification: Notification){
+        guard let diary = notification.object as? Diary else { return }
+        guard let row = notification.userInfo?["indexPath.row"] as? Int else { return }
+        self.diaryList[row] = diary
+        self.diaryList = self.diaryList.sorted(by: {
+            $0.date.compare($1.date) == .orderedDescending
+        })
+        self.collectionView.reloadData()
+    }
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

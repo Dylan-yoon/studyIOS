@@ -12,7 +12,7 @@ enum DiaryEditorMode {
     case edit(IndexPath, Diary)
 }
 
-
+  
 //델리게이트를 통해서 다이어리 객체 전달
 protocol WriteDiaryViewDelegate: AnyObject {
     func didSelectRegister(diary: Diary)
@@ -109,10 +109,31 @@ class WriteDiaryViewController: UIViewController {
         guard let title = self.titleTextField.text else { return }
         guard let contents = self.contentsTextView.text else { return }
         guard let date = self.diaryDate else { return }                 //title contents date 의 정보를 tapConfirmButton에 가져온다음
-        let diary = Diary(title: title, contents: contents, date: date, isStar: false)  //diar
-        self.delegate?.didSelectRegister(diary: diary)
+        let diary = Diary(title: title, contents: contents, date: date, isStar: false)
+        
+        
+        //MARK: -NotificationsCenter
+        switch self.diaryEditorMode {
+        case .new:
+            self.delegate?.didSelectRegister(diary: diary)
+            
+        case let .edit(IndexPath, _):
+            NotificationCenter.default.post(
+                name: NSNotification.Name("editDiary"),
+                object: diary,
+                userInfo: [
+                    "indexPath.row": IndexPath.row
+                ]
+            )
+        }
+        
+        
         self.navigationController?.popViewController(animated: true) //일기장 화면으로 전환
-    } //델리게이트 통해 작성된 다이어리가 전달될 준비가 됬으면 뷰컨트롤러로 가서 받을준비한다.
+        //델리게이트 통해 작성된 다이어리가 전달될 준비가 됬으면 뷰컨트롤러로 가서 받을준비한다.
+        
+    }
+    
+    
     
     @objc private func datePickerValueDidChange(_ datePicker: UIDatePicker) {
         let formmater = DateFormatter() //날짜와 텍스트 변환, 객체는 날짜와 텍스트표현을 변경 날짜->데이터형식 , 데이터형식 -> 날짜로 변경해준다.
