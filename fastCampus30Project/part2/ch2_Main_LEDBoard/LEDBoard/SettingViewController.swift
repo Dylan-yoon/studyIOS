@@ -10,7 +10,7 @@ import UIKit
 protocol LEDBoardSettingDelegate :AnyObject{
     func  changedSetting(text: String?, textColor: UIColor, backgroundColor : UIColor)
 }
-
+    //MARK: - OutLet
 class SettingViewController: UIViewController {
     @IBOutlet weak var textFiled: UITextField!
     @IBOutlet weak var yellowBtn: UIButton!
@@ -19,6 +19,8 @@ class SettingViewController: UIViewController {
     @IBOutlet weak var blackBtn: UIButton!
     @IBOutlet weak var blueBtn: UIButton!
     @IBOutlet weak var orangeBtn: UIButton!
+    
+    
     
     weak var delegate : LEDBoardSettingDelegate?
     var ledText : String?
@@ -41,6 +43,8 @@ class SettingViewController: UIViewController {
         self.changeBackgroundColorBtn(color: self.backgroundColor)
     }
     
+    
+    //MARK: -Action
     
     @IBAction func tapTextColorBtn(_ sender: UIButton) {
         if sender == self.yellowBtn {
@@ -73,7 +77,7 @@ class SettingViewController: UIViewController {
             textColor: self.textColor,
             backgroundColor: self.backgroundColor
         )
-        self.navigationController?.popViewController(animated: true)    //설정 누르면 이전화면으로 돌아가는 popViewContrrrrrr
+        self.navigationController?.popViewController(animated: true)    //저장 누르면 이전화면으로 돌아가는 popViewContrrrrrr
     }
     
     private func changeTextColor(color: UIColor) {

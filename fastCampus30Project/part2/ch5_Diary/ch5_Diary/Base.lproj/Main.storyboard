@@ -373,7 +373,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5EV-JS-Qhf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2029" y="192"/>
+            <point key="canvasLocation" x="2029" y="285"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="26L-Ve-wiJ">
@@ -391,7 +391,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zgT-Fe-E58" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-380" y="-218"/>
+            <point key="canvasLocation" x="-172" y="-455"/>
         </scene>
         <!--일기장-->
         <scene sceneID="agj-lY-E5K">

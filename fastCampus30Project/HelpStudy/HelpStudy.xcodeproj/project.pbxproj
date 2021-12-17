@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B5ABFFD02760B6D300B4FFC5 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ABFFCF2760B6D300B4FFC5 /* TimerViewController.swift */; };
+		B5B02E3B276C660000A6EC3C /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B02E3A276C660000A6EC3C /* Stopwatch.swift */; };
+		B5B02E3D276C6B3500A6EC3C /* StudyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B02E3C276C6B3500A6EC3C /* StudyTableViewController.swift */; };
 		B5CE32C02759F3DF00A9753A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CE32BF2759F3DF00A9753A /* AppDelegate.swift */; };
 		B5CE32C22759F3DF00A9753A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CE32C12759F3DF00A9753A /* SceneDelegate.swift */; };
 		B5CE32C42759F3DF00A9753A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CE32C32759F3DF00A9753A /* ViewController.swift */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B5ABFFCF2760B6D300B4FFC5 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		B5B02E3A276C660000A6EC3C /* Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
+		B5B02E3C276C6B3500A6EC3C /* StudyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyTableViewController.swift; sourceTree = "<group>"; };
 		B5CE32BC2759F3DF00A9753A /* HelpStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelpStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5CE32BF2759F3DF00A9753A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5CE32C12759F3DF00A9753A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +48,8 @@
 		B5CE32B32759F3DF00A9753A = {
 			isa = PBXGroup;
 			children = (
+				B5B02E3C276C6B3500A6EC3C /* StudyTableViewController.swift */,
+				B5B02E3A276C660000A6EC3C /* Stopwatch.swift */,
 				B5CE32BE2759F3DF00A9753A /* HelpStudy */,
 				B5CE32BD2759F3DF00A9753A /* Products */,
 			);
@@ -60,6 +68,7 @@
 			children = (
 				B5CE32BF2759F3DF00A9753A /* AppDelegate.swift */,
 				B5CE32C12759F3DF00A9753A /* SceneDelegate.swift */,
+				B5ABFFCF2760B6D300B4FFC5 /* TimerViewController.swift */,
 				B5CE32C32759F3DF00A9753A /* ViewController.swift */,
 				B5CE32C52759F3DF00A9753A /* Main.storyboard */,
 				B5CE32CB2759F3E100A9753A /* Assets.xcassets */,
@@ -141,9 +150,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5B02E3D276C6B3500A6EC3C /* StudyTableViewController.swift in Sources */,
 				B5CE32CA2759F3DF00A9753A /* HelpStudy.xcdatamodeld in Sources */,
 				B5CE32C42759F3DF00A9753A /* ViewController.swift in Sources */,
 				B5CE32C02759F3DF00A9753A /* AppDelegate.swift in Sources */,
+				B5ABFFD02760B6D300B4FFC5 /* TimerViewController.swift in Sources */,
+				B5B02E3B276C660000A6EC3C /* Stopwatch.swift in Sources */,
 				B5CE32C22759F3DF00A9753A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

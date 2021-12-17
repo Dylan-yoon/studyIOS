@@ -10,7 +10,7 @@ import UIKit
 
 
 class ViewController: UIViewController {
-//MARK: -
+    //MARK: - Outlet 지정 및 override
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet var editButton: UIBarButtonItem!           //strong 하는이유 :
     var doneButton : UIBarButtonItem?
@@ -39,49 +39,45 @@ class ViewController: UIViewController {
         self.tableView.setEditing(true, animated: true)
         
     }
-
-//MARK: - Add버튼을 눌렀을때 UIAlertController를 사용해 list 생성
+    
+    //MARK: - Add버튼을 눌렀을때 UIAlertController를 사용해 list 생성
     @IBAction func tapAddButton(_ sender: UIBarButtonItem) {
-        
         let alert = UIAlertController(title: "할 일 등록", message: nil, preferredStyle: .alert)                  //actionSheet 할 때 런타임 오류
-//      let alert = UIAlertController(title: "할 일 등록", message: nil, preferredStyle: UIAlertController.Style.alert)  같음.
         let registerButton = UIAlertAction(title: "Register", style: .default, handler: { [weak self] _ in      //alert에 버튼이 추가되게 만든다.
             guard let title = alert.textFields?[0].text else { return }                                         //alert.textFields?[0].text 를 가드문으로
             let task = Task(title: title, done: false)
             self?.tasks.append(task)                //tasks 배열에 append(추가)
             self?.tableView.reloadData()
         })
-//      let registertbtn = UIAlertAction(title: <#T##String?#>, style: <#T##UIAlertAction.Style#>, handler: <#T##((UIAlertAction) -> Void)?##((UIAlertAction) -> Void)?##(UIAlertAction) -> Void#>)
-        
         let cancelButton = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)                 //alert에 취소버튼 추가되게 만든다.
         let emptybtn = UIAlertAction(title: "empty", style: .default, handler: nil)
         //위에 상수를 생성 해놓고 alert.addAction 으로 버튼 생성한다.
         alert.addAction(cancelButton)   //취소버튼생성
         alert.addAction(registerButton) //저장 버튼 생성
         alert.addAction(emptybtn)
-        
         alert.addTextField(configurationHandler: { textField in                                 //텍스트Field 생성
             textField.placeholder = "할 일을 입력해주세요."
         })
         self.present(alert, animated: true, completion: nil)
+        
     }
     
     
     
     
-//MARK: - 앱 종료후 실행시에도 저장되게 만들기
-//MARK: 할일저장
-        func saveTasks() {
-            let data = self.tasks.map {
-                [
-                    "title": $0.title,
-                    "done" : $0.done
-                ]
-            }
-            let userDefaults = UserDefaults.standard
-            userDefaults.set(data, forKey: "tasks")
+    //MARK: - 앱 종료후 실행시에도 저장되게 만들기
+    //MARK: 할일저장
+    func saveTasks() {
+        let data = self.tasks.map {
+            [
+                "title": $0.title,
+                "done" : $0.done
+            ]
         }
-//MARK: 저장된 데이터(할 일) 로드
+        let userDefaults = UserDefaults.standard
+        userDefaults.set(data, forKey: "tasks")
+    }
+    //MARK: 저장된 데이터(할 일) 로드
     func loadTasks() {
         let userDefaults = UserDefaults.standard
         guard let data = userDefaults.object(forKey: "tasks") as? [[String: Any]] else { return }
