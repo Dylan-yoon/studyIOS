@@ -34,6 +34,10 @@ class TimerViewController: UIViewController {
     var timeStatus :TimeStatus = .end //timeStatus 를 초기상태 end로 초기화
 //    var studyTarget = self.titleLabel
     
+    var studytitle : String?  = nil
+    
+    
+    
     
     var duration : Int = 0 //타이머 초기값
     var timer = Timer()
@@ -71,8 +75,10 @@ class TimerViewController: UIViewController {
     @IBAction func titleBtn(_ sender: UIButton) {
         let alert = UIAlertController(title: "목표 설정", message: nil, preferredStyle: .alert)
         let registButton = UIAlertAction(title: "regist", style: .default, handler: { [weak self] _ in      //alert에 버튼이 추가되게 만든다.
-            guard let goal = alert.textFields?[0].text else { return }                                         //alert.textFields?[0].text 를 가드문으로
+            guard let goal = alert.textFields?[0].text else { return }
             self?.goalBtn.titleLabel?.text = goal
+            let title = goal
+            
             self?.goalBtn.titleLabel?.textColor = UIColor.init(red: 114, green: 238, blue: 223, alpha: 1)
             
           //텍스트필드에 적은 내용..타이틀 바꾸는법은뭘까 ㅠ

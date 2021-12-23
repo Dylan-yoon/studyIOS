@@ -73,20 +73,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cb1-lq-Z6n">
-                                <rect key="frame" x="157" y="108" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="QzI-qi-sZe"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="uFT-Lk-pPo"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="">
-                                    <backgroundConfiguration key="background" image="Image"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="l4a-Yz-Zy4" kind="show" id="oqC-AC-Ohy"/>
-                                </connections>
-                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="S5r-ZK-hWy">
                                 <rect key="frame" x="5" y="218" width="404" height="678"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -101,6 +87,20 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cb1-lq-Z6n">
+                                <rect key="frame" x="157" y="110" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="QzI-qi-sZe"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="uFT-Lk-pPo"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="">
+                                    <backgroundConfiguration key="background" image="Image"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="l4a-Yz-Zy4" kind="show" id="oqC-AC-Ohy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Fa0-Cs-2JB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

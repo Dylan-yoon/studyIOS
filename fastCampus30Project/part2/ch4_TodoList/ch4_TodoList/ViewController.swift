@@ -83,7 +83,7 @@ class ViewController: UIViewController {
         guard let data = userDefaults.object(forKey: "tasks") as? [[String: Any]] else { return }
         self.tasks = data.compactMap {
             guard let title = $0["title"] as? String else { return nil }
-            guard let done = $0["done"] as? Bool else { return  nil}
+            guard let done = $0["done"] as? Bool else { return nil }
             return Task(title: title, done: done)
         }
     }
@@ -130,7 +130,7 @@ extension ViewController: UITableViewDataSource {
 }
 
 extension ViewController : UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {         //didSelectRowAt  해당 줄이 선택 될 때...(체크박스설정을 위해)
         var task = self.tasks[indexPath.row]
         task.done = !task.done
         self.tasks[indexPath.row] = task

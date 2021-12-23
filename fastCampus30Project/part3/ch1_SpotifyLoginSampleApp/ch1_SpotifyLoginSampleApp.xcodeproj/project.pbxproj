@@ -7,33 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B53FEE92277325750030F8E4 /* tasklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53FEE91277325750030F8E4 /* tasklist.swift */; };
-		B5ABFFD02760B6D300B4FFC5 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ABFFCF2760B6D300B4FFC5 /* TimerViewController.swift */; };
-		B5CE32C02759F3DF00A9753A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CE32BF2759F3DF00A9753A /* AppDelegate.swift */; };
-		B5CE32C22759F3DF00A9753A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CE32C12759F3DF00A9753A /* SceneDelegate.swift */; };
-		B5CE32C42759F3DF00A9753A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CE32C32759F3DF00A9753A /* ViewController.swift */; };
-		B5CE32C72759F3DF00A9753A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5CE32C52759F3DF00A9753A /* Main.storyboard */; };
-		B5CE32CA2759F3DF00A9753A /* HelpStudy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5CE32C82759F3DF00A9753A /* HelpStudy.xcdatamodeld */; };
-		B5CE32CC2759F3E100A9753A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5CE32CB2759F3E100A9753A /* Assets.xcassets */; };
-		B5CE32CF2759F3E100A9753A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5CE32CD2759F3E100A9753A /* LaunchScreen.storyboard */; };
+		B5A642662774591D00F3BD37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A642652774591D00F3BD37 /* AppDelegate.swift */; };
+		B5A642682774591D00F3BD37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A642672774591D00F3BD37 /* SceneDelegate.swift */; };
+		B5A6426D2774591D00F3BD37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A6426B2774591D00F3BD37 /* Main.storyboard */; };
+		B5A642702774591D00F3BD37 /* ch1_SpotifyLoginSampleApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5A6426E2774591D00F3BD37 /* ch1_SpotifyLoginSampleApp.xcdatamodeld */; };
+		B5A642722774591E00F3BD37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5A642712774591E00F3BD37 /* Assets.xcassets */; };
+		B5A642752774591E00F3BD37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A642732774591E00F3BD37 /* LaunchScreen.storyboard */; };
+		B5A6427D2774595800F3BD37 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A6427C2774595800F3BD37 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B53FEE91277325750030F8E4 /* tasklist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tasklist.swift; sourceTree = "<group>"; };
-		B5ABFFCF2760B6D300B4FFC5 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
-		B5CE32BC2759F3DF00A9753A /* HelpStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelpStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5CE32BF2759F3DF00A9753A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B5CE32C12759F3DF00A9753A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B5CE32C32759F3DF00A9753A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B5CE32C62759F3DF00A9753A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B5CE32C92759F3DF00A9753A /* HelpStudy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HelpStudy.xcdatamodel; sourceTree = "<group>"; };
-		B5CE32CB2759F3E100A9753A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B5CE32CE2759F3E100A9753A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B5CE32D02759F3E100A9753A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5A642622774591D00F3BD37 /* ch1_SpotifyLoginSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ch1_SpotifyLoginSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5A642652774591D00F3BD37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B5A642672774591D00F3BD37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B5A6426C2774591D00F3BD37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5A6426F2774591D00F3BD37 /* ch1_SpotifyLoginSampleApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ch1_SpotifyLoginSampleApp.xcdatamodel; sourceTree = "<group>"; };
+		B5A642712774591E00F3BD37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5A642742774591E00F3BD37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B5A642762774591E00F3BD37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5A6427C2774595800F3BD37 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B5CE32B92759F3DF00A9753A /* Frameworks */ = {
+		B5A6425F2774591D00F3BD37 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,75 +39,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B5CE32B32759F3DF00A9753A = {
+		B5A642592774591D00F3BD37 = {
 			isa = PBXGroup;
 			children = (
-				B5CE32BE2759F3DF00A9753A /* HelpStudy */,
-				B5CE32BD2759F3DF00A9753A /* Products */,
+				B5A642642774591D00F3BD37 /* ch1_SpotifyLoginSampleApp */,
+				B5A642632774591D00F3BD37 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B5CE32BD2759F3DF00A9753A /* Products */ = {
+		B5A642632774591D00F3BD37 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B5CE32BC2759F3DF00A9753A /* HelpStudy.app */,
+				B5A642622774591D00F3BD37 /* ch1_SpotifyLoginSampleApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B5CE32BE2759F3DF00A9753A /* HelpStudy */ = {
+		B5A642642774591D00F3BD37 /* ch1_SpotifyLoginSampleApp */ = {
 			isa = PBXGroup;
 			children = (
-				B5CE32BF2759F3DF00A9753A /* AppDelegate.swift */,
-				B5CE32C12759F3DF00A9753A /* SceneDelegate.swift */,
-				B5ABFFCF2760B6D300B4FFC5 /* TimerViewController.swift */,
-				B5CE32C32759F3DF00A9753A /* ViewController.swift */,
-				B5CE32C52759F3DF00A9753A /* Main.storyboard */,
-				B5CE32CB2759F3E100A9753A /* Assets.xcassets */,
-				B5CE32CD2759F3E100A9753A /* LaunchScreen.storyboard */,
-				B53FEE91277325750030F8E4 /* tasklist.swift */,
-				B5CE32D02759F3E100A9753A /* Info.plist */,
-				B5CE32C82759F3DF00A9753A /* HelpStudy.xcdatamodeld */,
+				B5A642652774591D00F3BD37 /* AppDelegate.swift */,
+				B5A642672774591D00F3BD37 /* SceneDelegate.swift */,
+				B5A6426B2774591D00F3BD37 /* Main.storyboard */,
+				B5A6427C2774595800F3BD37 /* LoginViewController.swift */,
+				B5A642712774591E00F3BD37 /* Assets.xcassets */,
+				B5A642732774591E00F3BD37 /* LaunchScreen.storyboard */,
+				B5A642762774591E00F3BD37 /* Info.plist */,
+				B5A6426E2774591D00F3BD37 /* ch1_SpotifyLoginSampleApp.xcdatamodeld */,
 			);
-			path = HelpStudy;
+			path = ch1_SpotifyLoginSampleApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B5CE32BB2759F3DF00A9753A /* HelpStudy */ = {
+		B5A642612774591D00F3BD37 /* ch1_SpotifyLoginSampleApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B5CE32D32759F3E200A9753A /* Build configuration list for PBXNativeTarget "HelpStudy" */;
+			buildConfigurationList = B5A642792774591E00F3BD37 /* Build configuration list for PBXNativeTarget "ch1_SpotifyLoginSampleApp" */;
 			buildPhases = (
-				B5CE32B82759F3DF00A9753A /* Sources */,
-				B5CE32B92759F3DF00A9753A /* Frameworks */,
-				B5CE32BA2759F3DF00A9753A /* Resources */,
+				B5A6425E2774591D00F3BD37 /* Sources */,
+				B5A6425F2774591D00F3BD37 /* Frameworks */,
+				B5A642602774591D00F3BD37 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = HelpStudy;
-			productName = HelpStudy;
-			productReference = B5CE32BC2759F3DF00A9753A /* HelpStudy.app */;
+			name = ch1_SpotifyLoginSampleApp;
+			productName = ch1_SpotifyLoginSampleApp;
+			productReference = B5A642622774591D00F3BD37 /* ch1_SpotifyLoginSampleApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B5CE32B42759F3DF00A9753A /* Project object */ = {
+		B5A6425A2774591D00F3BD37 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
-					B5CE32BB2759F3DF00A9753A = {
+					B5A642612774591D00F3BD37 = {
 						CreatedOnToolsVersion = 13.1;
 					};
 				};
 			};
-			buildConfigurationList = B5CE32B72759F3DF00A9753A /* Build configuration list for PBXProject "HelpStudy" */;
+			buildConfigurationList = B5A6425D2774591D00F3BD37 /* Build configuration list for PBXProject "ch1_SpotifyLoginSampleApp" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -119,58 +113,56 @@
 				en,
 				Base,
 			);
-			mainGroup = B5CE32B32759F3DF00A9753A;
-			productRefGroup = B5CE32BD2759F3DF00A9753A /* Products */;
+			mainGroup = B5A642592774591D00F3BD37;
+			productRefGroup = B5A642632774591D00F3BD37 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B5CE32BB2759F3DF00A9753A /* HelpStudy */,
+				B5A642612774591D00F3BD37 /* ch1_SpotifyLoginSampleApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B5CE32BA2759F3DF00A9753A /* Resources */ = {
+		B5A642602774591D00F3BD37 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5CE32CF2759F3E100A9753A /* LaunchScreen.storyboard in Resources */,
-				B5CE32CC2759F3E100A9753A /* Assets.xcassets in Resources */,
-				B5CE32C72759F3DF00A9753A /* Main.storyboard in Resources */,
+				B5A642752774591E00F3BD37 /* LaunchScreen.storyboard in Resources */,
+				B5A642722774591E00F3BD37 /* Assets.xcassets in Resources */,
+				B5A6426D2774591D00F3BD37 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B5CE32B82759F3DF00A9753A /* Sources */ = {
+		B5A6425E2774591D00F3BD37 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5CE32CA2759F3DF00A9753A /* HelpStudy.xcdatamodeld in Sources */,
-				B5CE32C42759F3DF00A9753A /* ViewController.swift in Sources */,
-				B5CE32C02759F3DF00A9753A /* AppDelegate.swift in Sources */,
-				B5ABFFD02760B6D300B4FFC5 /* TimerViewController.swift in Sources */,
-				B53FEE92277325750030F8E4 /* tasklist.swift in Sources */,
-				B5CE32C22759F3DF00A9753A /* SceneDelegate.swift in Sources */,
+				B5A6427D2774595800F3BD37 /* LoginViewController.swift in Sources */,
+				B5A642662774591D00F3BD37 /* AppDelegate.swift in Sources */,
+				B5A642682774591D00F3BD37 /* SceneDelegate.swift in Sources */,
+				B5A642702774591D00F3BD37 /* ch1_SpotifyLoginSampleApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B5CE32C52759F3DF00A9753A /* Main.storyboard */ = {
+		B5A6426B2774591D00F3BD37 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B5CE32C62759F3DF00A9753A /* Base */,
+				B5A6426C2774591D00F3BD37 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		B5CE32CD2759F3E100A9753A /* LaunchScreen.storyboard */ = {
+		B5A642732774591E00F3BD37 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B5CE32CE2759F3E100A9753A /* Base */,
+				B5A642742774591E00F3BD37 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -178,7 +170,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		B5CE32D12759F3E200A9753A /* Debug */ = {
+		B5A642772774591E00F3BD37 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -239,7 +231,7 @@
 			};
 			name = Debug;
 		};
-		B5CE32D22759F3E200A9753A /* Release */ = {
+		B5A642782774591E00F3BD37 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -294,7 +286,7 @@
 			};
 			name = Release;
 		};
-		B5CE32D42759F3E200A9753A /* Debug */ = {
+		B5A6427A2774591E00F3BD37 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -303,7 +295,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 46957CX67H;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HelpStudy/Info.plist;
+				INFOPLIST_FILE = ch1_SpotifyLoginSampleApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -314,7 +306,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Sensual-Bee.HelpStudy";
+				PRODUCT_BUNDLE_IDENTIFIER = "Sensual-Bee.ch1-SpotifyLoginSampleApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -322,7 +314,7 @@
 			};
 			name = Debug;
 		};
-		B5CE32D52759F3E200A9753A /* Release */ = {
+		B5A6427B2774591E00F3BD37 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -331,7 +323,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 46957CX67H;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HelpStudy/Info.plist;
+				INFOPLIST_FILE = ch1_SpotifyLoginSampleApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -342,7 +334,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Sensual-Bee.HelpStudy";
+				PRODUCT_BUNDLE_IDENTIFIER = "Sensual-Bee.ch1-SpotifyLoginSampleApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -353,20 +345,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B5CE32B72759F3DF00A9753A /* Build configuration list for PBXProject "HelpStudy" */ = {
+		B5A6425D2774591D00F3BD37 /* Build configuration list for PBXProject "ch1_SpotifyLoginSampleApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B5CE32D12759F3E200A9753A /* Debug */,
-				B5CE32D22759F3E200A9753A /* Release */,
+				B5A642772774591E00F3BD37 /* Debug */,
+				B5A642782774591E00F3BD37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B5CE32D32759F3E200A9753A /* Build configuration list for PBXNativeTarget "HelpStudy" */ = {
+		B5A642792774591E00F3BD37 /* Build configuration list for PBXNativeTarget "ch1_SpotifyLoginSampleApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B5CE32D42759F3E200A9753A /* Debug */,
-				B5CE32D52759F3E200A9753A /* Release */,
+				B5A6427A2774591E00F3BD37 /* Debug */,
+				B5A6427B2774591E00F3BD37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -374,17 +366,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		B5CE32C82759F3DF00A9753A /* HelpStudy.xcdatamodeld */ = {
+		B5A6426E2774591D00F3BD37 /* ch1_SpotifyLoginSampleApp.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				B5CE32C92759F3DF00A9753A /* HelpStudy.xcdatamodel */,
+				B5A6426F2774591D00F3BD37 /* ch1_SpotifyLoginSampleApp.xcdatamodel */,
 			);
-			currentVersion = B5CE32C92759F3DF00A9753A /* HelpStudy.xcdatamodel */;
-			path = HelpStudy.xcdatamodeld;
+			currentVersion = B5A6426F2774591D00F3BD37 /* ch1_SpotifyLoginSampleApp.xcdatamodel */;
+			path = ch1_SpotifyLoginSampleApp.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = B5CE32B42759F3DF00A9753A /* Project object */;
+	rootObject = B5A6425A2774591D00F3BD37 /* Project object */;
 }
