@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B5426E9D27783B9B0091BD6B /* EnterEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5426E9C27783B9B0091BD6B /* EnterEmailViewController.swift */; };
+		B5426E9F27784EEF0091BD6B /* MainViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5426E9E27784EEF0091BD6B /* MainViewcontroller.swift */; };
 		B5A642662774591D00F3BD37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A642652774591D00F3BD37 /* AppDelegate.swift */; };
 		B5A642682774591D00F3BD37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A642672774591D00F3BD37 /* SceneDelegate.swift */; };
 		B5A6426D2774591D00F3BD37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A6426B2774591D00F3BD37 /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B5426E9C27783B9B0091BD6B /* EnterEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterEmailViewController.swift; sourceTree = "<group>"; };
+		B5426E9E27784EEF0091BD6B /* MainViewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewcontroller.swift; sourceTree = "<group>"; };
 		B5A642622774591D00F3BD37 /* ch1_SpotifyLoginSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ch1_SpotifyLoginSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5A642652774591D00F3BD37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5A642672774591D00F3BD37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,7 +65,9 @@
 				B5A642652774591D00F3BD37 /* AppDelegate.swift */,
 				B5A642672774591D00F3BD37 /* SceneDelegate.swift */,
 				B5A6426B2774591D00F3BD37 /* Main.storyboard */,
+				B5426E9C27783B9B0091BD6B /* EnterEmailViewController.swift */,
 				B5A6427C2774595800F3BD37 /* LoginViewController.swift */,
+				B5426E9E27784EEF0091BD6B /* MainViewcontroller.swift */,
 				B5A642712774591E00F3BD37 /* Assets.xcassets */,
 				B5A642732774591E00F3BD37 /* LaunchScreen.storyboard */,
 				B5A642762774591E00F3BD37 /* Info.plist */,
@@ -142,8 +148,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5A6427D2774595800F3BD37 /* LoginViewController.swift in Sources */,
+				B5426E9F27784EEF0091BD6B /* MainViewcontroller.swift in Sources */,
 				B5A642662774591D00F3BD37 /* AppDelegate.swift in Sources */,
 				B5A642682774591D00F3BD37 /* SceneDelegate.swift in Sources */,
+				B5426E9D27783B9B0091BD6B /* EnterEmailViewController.swift in Sources */,
 				B5A642702774591D00F3BD37 /* ch1_SpotifyLoginSampleApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

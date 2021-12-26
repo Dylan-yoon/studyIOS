@@ -17,7 +17,7 @@ enum TimeStatus {
 class TimerViewController: UIViewController {
     @IBOutlet weak var todayLabel: UILabel!     //날짜표시
     
-    @IBOutlet weak var goalBtn: UIButton!
+    @IBOutlet weak var goalBtnText: UIButton!
     
     @IBOutlet weak var studyTypePicker: UITextField!   //피커뷰로 공부 타입 선택
     
@@ -50,6 +50,8 @@ class TimerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.configureTimer()
+        self.initfont()
+        
     }
     
     
@@ -74,20 +76,17 @@ class TimerViewController: UIViewController {
     
     @IBAction func titleBtn(_ sender: UIButton) {
         let alert = UIAlertController(title: "목표 설정", message: nil, preferredStyle: .alert)
-        let registButton = UIAlertAction(title: "regist", style: .default, handler: { [weak self] _ in      //alert에 버튼이 추가되게 만든다.
-            guard let goal = alert.textFields?[0].text else { return }
-            self?.goalBtn.titleLabel?.text = goal
-            let title = goal
+        let registButton = UIAlertAction(title: "Regist", style: .default, handler: { [weak self] _ in
+            guard let title = alert.textFields?[0].text else { return }  //텍스트필드에 입력한 내용은 배열로 생성됨 [0]
+            self?.goalBtnText.titleLabel?.text = title
+            self?.goalBtnText.titleLabel?.textColor = UIColor.init(red: 114, green: 238, blue: 223, alpha: 1)
             
-            self?.goalBtn.titleLabel?.textColor = UIColor.init(red: 114, green: 238, blue: 223, alpha: 1)
             
           //텍스트필드에 적은 내용..타이틀 바꾸는법은뭘까 ㅠ
         })
         let cancelButton = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-        let emptybtn = UIAlertAction(title: "empty", style: .default, handler: nil)
         alert.addAction(registButton)
         alert.addAction(cancelButton)
-        alert.addAction(emptybtn)
         alert.addTextField(configurationHandler: { textField in
             textField.placeholder = "목표를 설정해주세요."
         })
@@ -95,10 +94,14 @@ class TimerViewController: UIViewController {
 
     }
     
-    
-    func setTitleBtn() {
+    func initfont() {
+        goalBtnText.titleLabel?.textColor = UIColor.black
         
     }
+//
+//    func setTitleBtn() {
+//        goalBtnText.t
+//    }
     
     
     /*
@@ -158,3 +161,5 @@ extension TimerViewController : UIPickerViewDataSource {
         return self.studyType.count
     }
 }
+
+
