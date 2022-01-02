@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class EnterEmailViewController: UIViewController{
     @IBOutlet weak var emailTextField: UITextField!
@@ -36,9 +37,25 @@ class EnterEmailViewController: UIViewController{
     
     
     @IBAction func nextbuttonTapped(_ sender: UIButton) {
+        //firebase 이메일/비밀번호 인증
+        let email = emailTextField.text ?? ""
+        let password = passwordTextFiled.text ?? ""
+        
+        //신규 사용자 생성
+        Auth.auth().createUser(withEmail: email, password: password) { [weak self] authResult, Error in
+            guard let self = self else { return }
+            
+            self.showMainViewController()
+        }
+        
     }
     
-    
+    private func showMainViewController() {
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let mainViewController = storyboard.instantiateViewController(withIdentifier: "MainViewController")
+        mainViewController.modalPresentationStyle = .fullScreen
+        navigationController?.show(mainViewController, sender: nil)
+    }
 }
 
 extension EnterEmailViewController : UITextFieldDelegate {
@@ -53,3 +70,6 @@ extension EnterEmailViewController : UITextFieldDelegate {
         nextButton.isEnabled = !isEmailEmpty && !isPasswordEmpty
     } //isEmailEmpty와 isPasswordEmpty가 빈칸이 아닐 때 nextbutton 활성화
 }
+
+
+
