@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import Firebase
+import FirebaseAuth
 
 class MainViewController : UIViewController {
     @IBOutlet weak var welcomeLable: UILabel!
@@ -31,6 +31,14 @@ class MainViewController : UIViewController {
     }
     
     @IBAction func logoutButtonTapped(_ sender: UIButton) {
+        let firebaseAuth = Auth.auth()
+        
+        do {
+            try firebaseAuth.signOut()
+            self.navigationController?.popToRootViewController(animated: true)
+        } catch let signOutError as NSError {
+            print("ERROR: signout \(signOutError.localizedDescription)")
+        }
         self.navigationController?.popViewController(animated: true)
     }
 }
