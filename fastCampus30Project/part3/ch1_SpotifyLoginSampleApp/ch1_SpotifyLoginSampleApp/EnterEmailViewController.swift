@@ -71,6 +71,7 @@ class EnterEmailViewController: UIViewController{
     }
     
     
+    
     private func loginUser(withEmail email: String , password : String) {
         Auth.auth().signIn(withEmail: email, password: password) { [weak self] _, error in
             guard let self = self else { return }
@@ -96,6 +97,10 @@ extension EnterEmailViewController : UITextFieldDelegate {
         nextButton.isEnabled = !isEmailEmpty && !isPasswordEmpty
     } //isEmailEmpty와 isPasswordEmpty가 빈칸이 아닐 때 nextbutton 활성화
 }
+
+
+
+
 
 
 
