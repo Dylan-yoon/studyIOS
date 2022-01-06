@@ -16,14 +16,14 @@ enum TimeStatus {
 
 class TimerViewController: UIViewController {
     @IBOutlet weak var todayLabel: UILabel!     //날짜표시
-    
     @IBOutlet weak var goalBtnText: UIButton!
-    
     @IBOutlet weak var studyTypePicker: UITextField!   //피커뷰로 공부 타입 선택
+    
     
     @IBOutlet var timerLabel: UIView!
     @IBOutlet weak var pauseLabel: UIButton!
     @IBOutlet weak var startLabel: UIButton!
+    
     
     @IBOutlet weak var configureImage: UIStackView! //시작버튼 누르면 [날짜,타이틀, 타입, 시작버튼] 사라지게 구현한다
     @IBOutlet weak var stopwatchLabel: UIStackView! //스톱워치 구현
@@ -52,6 +52,9 @@ class TimerViewController: UIViewController {
         self.configureTimer()
         self.initfont()
         
+        
+        //pickerView
+        createPickerView()
     }
     
     
@@ -155,13 +158,31 @@ class TimerViewController: UIViewController {
 
 
 //PickerView 설정
-extension TimerViewController : UIPickerViewDataSource {
+extension TimerViewController : UITextFieldDelegate, UIPickerViewDataSource, UIPickerViewDelegate {
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return self.studyType.count
     }
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return self.studyType[row]
+    }
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        self.studyTypePicker.text = studyType[row]
+    }
+    
+    
+    //이 함수를 오버라이드 하지않으면 pickerView가 열리지 않는다.
+    func createPickerView() {
+        let pickerView = UIPickerView()
+        pickerView.delegate = self
+        studyTypePicker.inputView = pickerView
+    }
+    
 }
 
 
+// https://dkfk2747.tistory.com/20 pickerView 참고
+//여기서 추가해야 할 것은

@@ -30,7 +30,7 @@ class CardListViewController : UITableViewController {
         cell.rankLabel.text = "\(creditCardList[indexPath.row].rank)"
         cell.promotionLabel.text = "\(creditCardList[indexPath.row].promotionDetail.amount)만원 증정"
         cell.cardNameLabel.text = "\(creditCardList[indexPath.row].name)"
-        
+        //CardListCell에서 각Cell에 해당하는 outlet 속성 변경
         let imageURL = URL(string: creditCardList[indexPath.row].cardImageURL)
         cell.cardImageView.kf.setImage(with: imageURL)
         

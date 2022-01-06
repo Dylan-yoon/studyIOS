@@ -20,6 +20,7 @@
 		B5A70F022785A61F0064AFD3 /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A70F012785A61F0064AFD3 /* CreditCard.swift */; };
 		B5A70F052785A75E0064AFD3 /* CardListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A70F032785A75E0064AFD3 /* CardListCell.swift */; };
 		B5A70F062785A75E0064AFD3 /* CardListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5A70F042785A75E0064AFD3 /* CardListCell.xib */; };
+		B5D825B52786CC94003282B5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5D825B42786CC94003282B5 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		B5A70F012785A61F0064AFD3 /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
 		B5A70F032785A75E0064AFD3 /* CardListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListCell.swift; sourceTree = "<group>"; };
 		B5A70F042785A75E0064AFD3 /* CardListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardListCell.xib; sourceTree = "<group>"; };
+		B5D825B42786CC94003282B5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				B5A70F042785A75E0064AFD3 /* CardListCell.xib */,
 				B5A70EF127859B860064AFD3 /* ch1_CreditCardList.xcdatamodeld */,
 				B5A70EF627859B870064AFD3 /* LaunchScreen.storyboard */,
+				B5D825B42786CC94003282B5 /* GoogleService-Info.plist */,
 			);
 			path = ch1_CreditCardList;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				B52024722785FB4600992F94 /* money.json in Resources */,
 				B5A70EF027859B860064AFD3 /* Main.storyboard in Resources */,
 				B5A70F062785A75E0064AFD3 /* CardListCell.xib in Resources */,
+				B5D825B52786CC94003282B5 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
