@@ -11,7 +11,7 @@
         <!--카드 혜택 추천-->
         <scene sceneID="Xa1-XY-B14">
             <objects>
-                <tableViewController id="Hpe-XA-mff" customClass="CardListViewController" customModule="ch2_CreditCardList" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Hpe-XA-mff" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="j3e-GI-YbW" customClass="table">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,7 +43,7 @@
         <!--카드 혜택 상세-->
         <scene sceneID="OLW-jc-55L">
             <objects>
-                <viewController id="YnI-P4-RlG" customClass="CardDetailViewController" customModule="ch2_CreditCardList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CardDetailViewController" id="YnI-P4-RlG" customClass="CardDetailViewController" customModule="ch2_CreditCardList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JIa-d0-SxN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

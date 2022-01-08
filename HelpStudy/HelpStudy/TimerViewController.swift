@@ -28,14 +28,16 @@ class TimerViewController: UIViewController {
     @IBOutlet weak var configureImage: UIStackView! //시작버튼 누르면 [날짜,타이틀, 타입, 시작버튼] 사라지게 구현한다
     @IBOutlet weak var stopwatchLabel: UIStackView! //스톱워치 구현
     
+    //MARK: - 상수 변수 생성
     
     var todays = Date() //오늘 날짜 설정
     var studyType = ["computer", "statics", "chemistry"]
+    //추후 설정 탭에서 직접 추가 및 변경 가능하도록 변경
+    
     var timeStatus :TimeStatus = .end //timeStatus 를 초기상태 end로 초기화
 //    var studyTarget = self.titleLabel
     
     var studytitle : String?  = nil
-    
     
     
     
@@ -53,8 +55,13 @@ class TimerViewController: UIViewController {
         self.initfont()
         
         
+        
+        
         //pickerView
         createPickerView()
+        dismissPickerView()
+        studyTypePicker.tintColor = .clear //textfiled내 커서 깜빡임을 없앤다.
+        
     }
     
     
@@ -72,7 +79,7 @@ class TimerViewController: UIViewController {
     
     
     
-//MARK: -Action btn
+//MARK: -Action Button, alert
     
     //클릭 시 alertsheet로 목표 설정 & 변경
     
@@ -85,8 +92,9 @@ class TimerViewController: UIViewController {
             self?.goalBtnText.titleLabel?.textColor = UIColor.init(red: 114, green: 238, blue: 223, alpha: 1)
             
             
-          //텍스트필드에 적은 내용..타이틀 바꾸는법은뭘까 ㅠ
+        //텍스트필드에 적은 내용..타이틀 바꾸는법은뭘까 ㅠ
         })
+        
         let cancelButton = UIAlertAction(title: "Cancel", style: .cancel, handler: {_ in
             self.goalBtnText.titleLabel?.textColor = UIColor.black
         })
@@ -96,39 +104,17 @@ class TimerViewController: UIViewController {
             textField.placeholder = "목표를 설정해주세요."
         })
         self.present(alert, animated: true, completion: nil)
-
     }
     
     func initfont() {
         goalBtnText.titleLabel?.textColor = UIColor.black
         
     }
-//
-//    func setTitleBtn() {
-//        goalBtnText.t
-//    }
     
-    
-    /*
-    let alert = UIAlertController(title: "할 일 등록", message: nil, preferredStyle: .alert)                  //actionSheet 할 때 런타임 오류
-    let registerButton = UIAlertAction(title: "Register", style: .default, handler: { [weak self] _ in      //alert에 버튼이 추가되게 만든다.
-        guard let title = alert.textFields?[0].text else { return }                                         //alert.textFields?[0].text 를 가드문으로
-        let task = Task(title: title, done: false)
-        self?.tasks.append(task)                //tasks 배열에 append(추가)
-        self?.tableView.reloadData()
-    })
-    let cancelButton = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)                 //alert에 취소버튼 추가되게 만든다.
-    let emptybtn = UIAlertAction(title: "empty", style: .default, handler: nil)
-    //위에 상수를 생성 해놓고 alert.addAction 으로 버튼 생성한다.
-    alert.addAction(cancelButton)   //취소버튼생성
-    alert.addAction(registerButton) //저장 버튼 생성
-    alert.addAction(emptybtn)
-    alert.addTextField(configurationHandler: { textField in                                 //텍스트Field 생성
-        textField.placeholder = "할 일을 입력해주세요."
-    })
-    self.present(alert, animated: true, completion: nil)
-    */
-    
+    func reloadTextLabel() {
+        
+    }
+
     @IBAction func startBtn(_ sender: UIButton) {
         //구현내용 : 타이틀과 스터디타입 설정 했을 때 시작버튼활성화 , 시작버튼 클릭시 타이머와 stop 버튼만 보여짐,
         self.duration = 0 //타이머 초기값으로
@@ -157,7 +143,7 @@ class TimerViewController: UIViewController {
 
 
 
-//PickerView 설정
+//MARK: -PickerView 설정
 extension TimerViewController : UITextFieldDelegate, UIPickerViewDataSource, UIPickerViewDelegate {
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -179,6 +165,21 @@ extension TimerViewController : UITextFieldDelegate, UIPickerViewDataSource, UIP
         let pickerView = UIPickerView()
         pickerView.delegate = self
         studyTypePicker.inputView = pickerView
+    }
+    
+    //PickerView 속성 변경
+    func dismissPickerView() {
+        let toolBar = UIToolbar()
+        toolBar.sizeToFit()
+        let button = UIBarButtonItem(title: "선택", style: .plain, target: self, action: #selector(self.pickeractions))
+        toolBar.setItems([button], animated: true)
+        toolBar.isUserInteractionEnabled = true
+        studyTypePicker.inputAccessoryView = toolBar
+    }
+    
+    //pickerView 선택 버튼 클릭시 액션 설정, 
+    @objc func pickeractions() {
+        
     }
     
 }
