@@ -33,6 +33,8 @@ class TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell") else { return UITableViewCell() }
         
+        
+    
 //                cell.nameLabel.text = "민수"
 //                cell.ageLabel.text = "11"
                 
