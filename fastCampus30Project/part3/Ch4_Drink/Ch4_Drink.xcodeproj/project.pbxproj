@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B50D5B082791C95A0077A1EF /* UNNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50D5B072791C95A0077A1EF /* UNNotificationCenter.swift */; };
 		B572F0BB278DBBFB00F19762 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572F0BA278DBBFB00F19762 /* AppDelegate.swift */; };
 		B572F0BD278DBBFB00F19762 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572F0BC278DBBFB00F19762 /* SceneDelegate.swift */; };
 		B572F0C2278DBBFB00F19762 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B572F0C0278DBBFB00F19762 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B50D5B072791C95A0077A1EF /* UNNotificationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UNNotificationCenter.swift; sourceTree = "<group>"; };
 		B572F0B7278DBBFB00F19762 /* Ch4_Drink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ch4_Drink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B572F0BA278DBBFB00F19762 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B572F0BC278DBBFB00F19762 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				B572F0BC278DBBFB00F19762 /* SceneDelegate.swift */,
 				B5DC3061278DC4660044090A /* Alert.swift */,
 				B5DC3059278DC0D20044090A /* AlertListCell.swift */,
+				B50D5B072791C95A0077A1EF /* UNNotificationCenter.swift */,
 				B5DC305A278DC0D20044090A /* AlertListCell.xib */,
 				B572F0C0278DBBFB00F19762 /* Main.storyboard */,
 				B572F0D1278DBC3100F19762 /* AlertListViewController.swift */,
@@ -154,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B50D5B082791C95A0077A1EF /* UNNotificationCenter.swift in Sources */,
 				B5DC3062278DC4660044090A /* Alert.swift in Sources */,
 				B572F0C5278DBBFB00F19762 /* Ch4_Drink.xcdatamodeld in Sources */,
 				B5DC3064278DCAF70044090A /* AddAlertViewController.swift in Sources */,
