@@ -46,7 +46,7 @@
         <!--Add Alert View Controller-->
         <scene sceneID="gyT-gI-QdC">
             <objects>
-                <viewController id="ZxU-d3-hIB" customClass="AddAlertViewController" customModule="Ch4_Drink" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddAlertViewController" id="ZxU-d3-hIB" customClass="AddAlertViewController" customModule="Ch4_Drink" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MH9-RD-8i9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -81,9 +81,6 @@
                                     <constraint firstAttribute="height" constant="50" id="F0A-wM-fxc"/>
                                 </constraints>
                                 <locale key="locale" localeIdentifier="ko_KR"/>
-                                <connections>
-                                    <action selector="datePicker:" destination="ZxU-d3-hIB" eventType="valueChanged" id="rl8-w9-AI4"/>
-                                </connections>
                             </datePicker>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8tw-DJ-Kk8"/>
@@ -98,6 +95,9 @@
                             <constraint firstItem="eAC-FB-1TS" firstAttribute="leading" secondItem="8tw-DJ-Kk8" secondAttribute="leading" constant="20" id="gQC-4C-4Wo"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="datePicker" destination="ezk-IS-mae" id="Xdx-g7-F37"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NPo-Pc-Pbg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
