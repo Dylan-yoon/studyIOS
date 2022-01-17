@@ -52,10 +52,12 @@ class ViewController: UIViewController {
                 guard let self = self else { return }
                 self.currentSeconds -= 1 //시간 카운트 다운
                 debugPrint(self.currentSeconds)
+                
                 let hour = self.currentSeconds / 3600
                 let minites = (self.currentSeconds % 3600) / 60
                 let seconds = (self.currentSeconds % 3600) % 60
-                self.timerLabel.text = String(format: "%02d:%02d:%02d", hour, minites, seconds) // 이 구문써야 옵셔널 오류 사라짐
+                self.timerLabel.text = String(format: "%02d:%02d:%02d", hour, minites, seconds)
+                
                 self.progressView.progress = Float(self.currentSeconds) / Float(self.duration)
                 UIView.animate(withDuration: 0.5, delay: 0, animations: {
                     self.imageView.transform = CGAffineTransform(rotationAngle: .pi)

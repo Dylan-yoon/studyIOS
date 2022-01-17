@@ -9,12 +9,21 @@ import UIKit
 
 class TableViewController: UITableViewController {
 
+    let button: UIButton = UIButton()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         registerXIB()
+        
+        button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
     }
-
+    
+    @objc
+    func buttonAction() {
+        
+    }
+    
     
     // MARK: - Table view data source
 
@@ -27,6 +36,7 @@ class TableViewController: UITableViewController {
 
         return 5
     }
+    
     
     
     
