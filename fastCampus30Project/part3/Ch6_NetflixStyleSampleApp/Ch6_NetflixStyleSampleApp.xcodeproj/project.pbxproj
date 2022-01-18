@@ -14,6 +14,10 @@
 		B50571B92795ADEB008A6956 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B50571B72795ADEB008A6956 /* LaunchScreen.storyboard */; };
 		B50571C12795AED6008A6956 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50571C02795AED6008A6956 /* HomeViewController.swift */; };
 		B50571C42795B1DB008A6956 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B50571C32795B1DB008A6956 /* SnapKit */; };
+		B5969E122795BA3D0054BF8E /* Content.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5969E112795BA3D0054BF8E /* Content.plist */; };
+		B5969E142795BA7C0054BF8E /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5969E132795BA7C0054BF8E /* Content.swift */; };
+		B5A9007F2796FFF500DE2152 /* ContentsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A9007E2796FFF500DE2152 /* ContentsCollectionViewCell.swift */; };
+		B5A90081279704C200DE2152 /* ContentCollectioViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A90080279704C200DE2152 /* ContentCollectioViewHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +29,10 @@
 		B50571B82795ADEB008A6956 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B50571BA2795ADEB008A6956 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B50571C02795AED6008A6956 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B5969E112795BA3D0054BF8E /* Content.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Content.plist; path = "../../../../../../../Downloads/part3/Part 3/Ch6_NetflixStyle/Content.plist"; sourceTree = "<group>"; };
+		B5969E132795BA7C0054BF8E /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
+		B5A9007E2796FFF500DE2152 /* ContentsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentsCollectionViewCell.swift; sourceTree = "<group>"; };
+		B5A90080279704C200DE2152 /* ContentCollectioViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectioViewHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +67,14 @@
 			isa = PBXGroup;
 			children = (
 				B50571A92795ADEA008A6956 /* AppDelegate.swift */,
-				B50571C02795AED6008A6956 /* HomeViewController.swift */,
 				B50571AB2795ADEA008A6956 /* SceneDelegate.swift */,
+				B50571C02795AED6008A6956 /* HomeViewController.swift */,
+				B5A90080279704C200DE2152 /* ContentCollectioViewHeader.swift */,
+				B5969E132795BA7C0054BF8E /* Content.swift */,
 				B50571B52795ADEB008A6956 /* Assets.xcassets */,
 				B50571B72795ADEB008A6956 /* LaunchScreen.storyboard */,
+				B5969E112795BA3D0054BF8E /* Content.plist */,
+				B5A9007E2796FFF500DE2152 /* ContentsCollectionViewCell.swift */,
 				B50571BA2795ADEB008A6956 /* Info.plist */,
 				B50571B22795ADEA008A6956 /* Ch6_NetflixStyleSampleApp.xcdatamodeld */,
 			);
@@ -135,6 +147,7 @@
 			files = (
 				B50571B92795ADEB008A6956 /* LaunchScreen.storyboard in Resources */,
 				B50571B62795ADEB008A6956 /* Assets.xcassets in Resources */,
+				B5969E122795BA3D0054BF8E /* Content.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +161,9 @@
 				B50571B42795ADEA008A6956 /* Ch6_NetflixStyleSampleApp.xcdatamodeld in Sources */,
 				B50571AA2795ADEA008A6956 /* AppDelegate.swift in Sources */,
 				B50571AC2795ADEA008A6956 /* SceneDelegate.swift in Sources */,
+				B5969E142795BA7C0054BF8E /* Content.swift in Sources */,
+				B5A9007F2796FFF500DE2152 /* ContentsCollectionViewCell.swift in Sources */,
+				B5A90081279704C200DE2152 /* ContentCollectioViewHeader.swift in Sources */,
 				B50571C12795AED6008A6956 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
