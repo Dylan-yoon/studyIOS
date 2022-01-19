@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,13 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="00 : 00 : 00" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tH6-rm-Txc">
-                                <rect key="frame" x="56.5" y="415.5" width="301" height="75.5"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tH6-rm-Txc">
+                                <rect key="frame" x="20" y="415" width="374" height="76"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="55"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmN-Ps-VnK">
-                                <rect key="frame" x="56.5" y="521" width="49" height="31"/>
+                                <rect key="frame" x="20" y="521" width="49" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="시작"/>
                                 <connections>
@@ -30,7 +30,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALQ-4T-Ckm">
-                                <rect key="frame" x="308.5" y="521" width="49" height="31"/>
+                                <rect key="frame" x="345" y="521" width="49" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="정지"/>
                                 <connections>
@@ -44,9 +44,11 @@
                             <constraint firstItem="tH6-rm-Txc" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="A4q-iY-FPl"/>
                             <constraint firstItem="tH6-rm-Txc" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Cd8-hV-aIS"/>
                             <constraint firstItem="ALQ-4T-Ckm" firstAttribute="top" secondItem="tH6-rm-Txc" secondAttribute="bottom" constant="30" id="PSk-l3-240"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ALQ-4T-Ckm" secondAttribute="trailing" constant="20" id="QCY-OV-WED"/>
                             <constraint firstItem="wmN-Ps-VnK" firstAttribute="top" secondItem="tH6-rm-Txc" secondAttribute="bottom" constant="30" id="TVl-q1-2HK"/>
-                            <constraint firstItem="wmN-Ps-VnK" firstAttribute="leading" secondItem="tH6-rm-Txc" secondAttribute="leading" id="WwQ-Hc-DwP"/>
-                            <constraint firstItem="ALQ-4T-Ckm" firstAttribute="trailing" secondItem="tH6-rm-Txc" secondAttribute="trailing" id="mH1-vN-8wd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tH6-rm-Txc" secondAttribute="trailing" constant="20" id="dou-jA-0rj"/>
+                            <constraint firstItem="wmN-Ps-VnK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="f6d-YJ-bfe"/>
+                            <constraint firstItem="tH6-rm-Txc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pYA-h8-xwY"/>
                         </constraints>
                     </view>
                     <connections>

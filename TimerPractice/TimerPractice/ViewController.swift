@@ -9,20 +9,15 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var mainTimer:Timer?
-    var timercount = 0
+    var maintimer:Timer?
+    var timercount : Double = 0
+
+    
+    
+    
+    
 
     @IBOutlet weak var timerLabel: UITextField!
-    
-//    var timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(update), userInfo: nil, repeats: true)
-//
-
-    
-    
-//    var timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: timer in
-//    print("FIRE!!")
-//    )
-//
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,22 +27,24 @@ class ViewController: UIViewController {
     
     
     @IBAction func startBtn(_ sender: UIButton) {
+        
+        self.maintimer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(fireTimer), userInfo: nil, repeats: true)
+        
+
     }
     
-    
-    @IBAction func stopBtn(_ sender: UIButton) {
-    }
-    
-    
-    func starting() {
+    @objc func fireTimer() {
+        self.timercount += 0.1
+        self.timerLabel.text = String(round(timercount*1000)/1000)
+        
         
     }
     
+    @IBAction func stopBtn(_ sender: UIButton) {
+        
+        self.maintimer?.invalidate()
+        self.maintimer = nil
+    }
     
-//
-//    @objc func update() {
-//        timerLabel.text = String(count)
-//        count = count + 1
-//    }
 }
 
