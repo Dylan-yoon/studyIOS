@@ -12,7 +12,7 @@ class TableViewController: UITableViewController {
     
     struct NameAge {
         var name : String
-        var age : Int
+        var age : String
     }
     
     var nameAge = [NameAge]()
@@ -32,16 +32,28 @@ class TableViewController: UITableViewController {
     
     
     @IBAction func addInfo(_ sender: UIBarButtonItem) {
-        let informations = self.nameAge
-        
         let alert = UIAlertController(title: "RegistInfo", message: nil, preferredStyle: .alert)
         let nameRegistBtn = UIAlertAction(title: "d", style: .default, handler: { [weak self] _ in
-            guard let title = alert.textFields?[0].text else { return }
-            let name = 
-            
+            guard let nametitle = alert.textFields?[0].text else { return } //
+            guard let agetitle = alert.textFields?[1].text else { return }
+            let name = NameAge(name: nametitle, age: agetitle)
+            self?.nameAge.append(name)
+            self?.tableView.reloadData()
+        })
+        let cancelBtn = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
+        alert.addAction(nameRegistBtn)
+        alert.addAction(cancelBtn)
+        
+        alert.addTextField(configurationHandler: {textField in
+            textField.placeholder = "이름"
+        })
+        alert.addTextField(configurationHandler: { textField in
+            textField.placeholder = "나이"
         })
         
-        
+        self.present(alert, animated: true, completion: nil
+        )
         
         
 //        let registerButton = UIAlertAction(title: "Register", style: .default, handler: { [weak self] _ in      //alert에 버튼이 추가되게 만든다.
@@ -50,6 +62,18 @@ class TableViewController: UITableViewController {
 //             self?.tasks.append(task)                //tasks 배열에 append(추가)
 //             self?.tableView.reloadData()
 //         })
+        
+//        let cancelButton = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)                 //alert에 취소버튼 추가되게 만든다.
+//        let emptybtn = UIAlertAction(title: "empty", style: .default, handler: nil)
+//        //위에 상수를 생성 해놓고 alert.addAction 으로 버튼 생성한다.
+//        alert.addAction(cancelButton)   //취소버튼생성
+//        alert.addAction(registerButton) //저장 버튼 생성
+//        alert.addAction(emptybtn)
+//        alert.addTextField(configurationHandler: { textField in                                 //텍스트Field 생성
+//            textField.placeholder = "할 일을 입력해주세요."
+//        })
+//        self.present(alert, animated: true, completion: nil)
+//
     }
     
     
