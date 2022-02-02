@@ -19,6 +19,8 @@
 		7DFE122C26B019AD004E6F82 /* Content.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7DFE122B26B019AD004E6F82 /* Content.plist */; };
 		7DFE122E26B01F37004E6F82 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFE122D26B01F37004E6F82 /* Content.swift */; };
 		7DFE123026B15114004E6F82 /* ContentCollectionViewMainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFE122F26B15114004E6F82 /* ContentCollectionViewMainCell.swift */; };
+		B5469B7D27AADF7A001E24D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5469B7C27AADF7A001E24D5 /* ContentView.swift */; };
+		B5469B7F27AAE778001E24D5 /* ContentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5469B7E27AAE778001E24D5 /* ContentDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		7DFE122B26B019AD004E6F82 /* Content.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Content.plist; sourceTree = "<group>"; };
 		7DFE122D26B01F37004E6F82 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
 		7DFE122F26B15114004E6F82 /* ContentCollectionViewMainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewMainCell.swift; sourceTree = "<group>"; };
+		B5469B7C27AADF7A001E24D5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B5469B7E27AAE778001E24D5 /* ContentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,8 @@
 			children = (
 				7DFE120426AFE4C3004E6F82 /* AppDelegate.swift */,
 				7DFE120626AFE4C3004E6F82 /* SceneDelegate.swift */,
+				B5469B7C27AADF7A001E24D5 /* ContentView.swift */,
+				B5469B7E27AAE778001E24D5 /* ContentDetailView.swift */,
 				7DFE122D26B01F37004E6F82 /* Content.swift */,
 				7DFE121826AFE5C4004E6F82 /* HomeViewController.swift */,
 				7DFE122326AFF636004E6F82 /* ContentCollectionViewHeader.swift */,
@@ -165,6 +171,8 @@
 				7DFE120526AFE4C3004E6F82 /* AppDelegate.swift in Sources */,
 				7DFE122E26B01F37004E6F82 /* Content.swift in Sources */,
 				7DFE122A26AFF684004E6F82 /* ContentCollectionViewRankCell.swift in Sources */,
+				B5469B7F27AAE778001E24D5 /* ContentDetailView.swift in Sources */,
+				B5469B7D27AADF7A001E24D5 /* ContentView.swift in Sources */,
 				7DFE123026B15114004E6F82 /* ContentCollectionViewMainCell.swift in Sources */,
 				7DFE120726AFE4C3004E6F82 /* SceneDelegate.swift in Sources */,
 				7DFE121926AFE5C4004E6F82 /* HomeViewController.swift in Sources */,

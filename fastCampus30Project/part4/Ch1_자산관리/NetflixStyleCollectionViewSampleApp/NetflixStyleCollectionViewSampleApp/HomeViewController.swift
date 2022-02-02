@@ -191,24 +191,29 @@ extension HomeViewController {
     
     //셀 선택
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let sectionName = contents[indexPath.section].sectionName
-        print("TEST: \(sectionName) 섹션의 \(indexPath.row + 1)번째 콘텐츠")
+        let isFirstSection = indexPath.section == 0
+        let seletedItem = isFirstSection ? mainItem : contents[indexPath.section].contentItem[indexPath.row]
+        
+        let contentDetailView = ContentDetailView(item: seletedItem)
+        let hostingVC = UIHostingController(rootView: contentDetailView)
+        self.show(hostingVC, sender: nil)
     }
 }
 
 //SwiftUI를 활용한 미리보기
 struct HomeViewController_Previews: PreviewProvider {
     static var previews: some View {
-        Container().edgesIgnoringSafeArea(.all)
+        HomeViewControllerRepresentable().edgesIgnoringSafeArea(.all)
     }
     
-    struct Container: UIViewControllerRepresentable {
-        func makeUIViewController(context: Context) -> UIViewController {
-            let layout = UICollectionViewFlowLayout()
-            let homeViewController = HomeViewController(collectionViewLayout: layout)
-            return UINavigationController(rootViewController: homeViewController)
-        }
-        func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {}
-        typealias UIViewControllerType = UIViewController
+}
+
+struct HomeViewControllerRepresentable: UIViewControllerRepresentable {
+    func makeUIViewController(context: Context) -> UIViewController {
+        let layout = UICollectionViewFlowLayout()
+        let homeViewController = HomeViewController(collectionViewLayout: layout)
+        return UINavigationController(rootViewController: homeViewController)
     }
+    func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {}
+    typealias UIViewControllerType = UIViewController
 }
