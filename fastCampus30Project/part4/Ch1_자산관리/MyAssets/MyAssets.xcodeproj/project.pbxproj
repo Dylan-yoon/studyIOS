@@ -29,6 +29,7 @@
 		B5E6C6BC27AF878600480104 /* AssetSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E6C6BB27AF878600480104 /* AssetSectionHeaderView.swift */; };
 		B5E6C6BE27AF884700480104 /* AssetSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E6C6BD27AF884700480104 /* AssetSectionView.swift */; };
 		B5E6C6C027AF8A1D00480104 /* AssetSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E6C6BF27AF8A1D00480104 /* AssetSummaryView.swift */; };
+		B5E6C6C427AF989000480104 /* TabMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E6C6C327AF989000480104 /* TabMenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		B5E6C6BB27AF878600480104 /* AssetSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetSectionHeaderView.swift; sourceTree = "<group>"; };
 		B5E6C6BD27AF884700480104 /* AssetSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetSectionView.swift; sourceTree = "<group>"; };
 		B5E6C6BF27AF8A1D00480104 /* AssetSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetSummaryView.swift; sourceTree = "<group>"; };
+		B5E6C6C327AF989000480104 /* TabMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabMenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 				B5B1F38027AED89800ADB194 /* AssetSummaryData.swift */,
 				B5E6C6BB27AF878600480104 /* AssetSectionHeaderView.swift */,
 				B5E6C6BD27AF884700480104 /* AssetSectionView.swift */,
+				B5E6C6C327AF989000480104 /* TabMenuView.swift */,
 			);
 			path = AssetSummaryView;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 				B5E6C6BC27AF878600480104 /* AssetSectionHeaderView.swift in Sources */,
 				B5D8FD6227AD7CBD00B3088D /* AssetMenuGridView.swift in Sources */,
 				B5C8245527AECC4400EA3A24 /* AssetBannerView.swift in Sources */,
+				B5E6C6C427AF989000480104 /* TabMenuView.swift in Sources */,
 				B510C10427AD756D00A5640A /* AssetMenuButtonStyle.swift in Sources */,
 				B5D8FD6927AD808C00B3088D /* BannerCard.swift in Sources */,
 				B5C8245327AEB4B700EA3A24 /* PageControl.swift in Sources */,
