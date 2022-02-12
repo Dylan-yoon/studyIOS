@@ -19,15 +19,11 @@ class TableViewController: UITableViewController {
     
     
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         registerXIB()
     }
-    
-    
     
     
     
@@ -78,6 +74,7 @@ class TableViewController: UITableViewController {
     
     
     
+
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
