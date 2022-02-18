@@ -121,10 +121,9 @@ private extension ProfileViewController {
         )
         navigationItem.rightBarButtonItem = rightBarButton
     }
-
+    
     @objc func didTapRightBarButtonItem() {
         let actionSheet = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
-
         [
             UIAlertAction(title: "회원 정보 변경", style: .default),
             UIAlertAction(title: "탈퇴하기", style: .destructive),
@@ -161,7 +160,7 @@ private extension ProfileViewController {
             $0.trailing.equalToSuperview().inset(inset)
             $0.centerY.equalTo(profileImageView.snp.centerY)
         }
-
+        
         nameLabel.snp.makeConstraints {
             $0.top.equalTo(profileImageView.snp.bottom).offset(12.0)
             $0.leading.equalTo(profileImageView.snp.leading)
