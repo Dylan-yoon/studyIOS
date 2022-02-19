@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import UIKit
+import SnapKit
 
 
 final class UploadViewController :UIViewController {
