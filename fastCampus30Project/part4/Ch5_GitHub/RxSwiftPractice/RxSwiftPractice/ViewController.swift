@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  GithubRepositoryPrac
+//  RxSwiftPractice
 //
 //  Created by 윤병희 on 2022/02/19.
 //
